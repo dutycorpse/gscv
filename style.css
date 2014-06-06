@@ -1,19 +1,35 @@
 .editor-view {
     display: flex;
 
-    background: url(http://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Square_Tiles_Texture.png);
+    background: url(http://img1.mxstatic.com/wallpapers/5ccd3f1a8a76f74076b4dd03e97e30bd_large.jpeg);
 }
 
 .card {
-    margin: auto;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  width: 550px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  background: #F5F5F5;
+  color: #FFFFFF;
+}
 
-    flex: none;
-    width: 550px;
-    height: 300px;
+.update {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
 
-    padding: 20px;
+#editable {
+  padding: 20px;
+}
 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-    background: #2C2C2C;
-    color: #FFFFFF;
+.name, .job {
+  color: black;
+}
+
+.div-bg-color {
+  color: blue;
 }

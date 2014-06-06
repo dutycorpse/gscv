@@ -24,19 +24,12 @@ require( [
     'sources/apis/editor/API.js'
 
 ], function ( $, UI, mousewheel, toggleAttr, WidgetApi ) {
-
     $( function ( ) {
-
         define( 'editor', function ( ) {
-
             return WidgetApi.start( {
                 rootContainer : $( '.editor-panel' )
             } );
-
         } );
-
         require( [ 'app' ] );
-
     } );
-
 } );

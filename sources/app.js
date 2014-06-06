@@ -51,4 +51,9 @@ define( [
         name  : 'radius'
     } );
 
+    appearance.createWidget( 'Change color', 'NumberedSlider', {
+        model : card,
+        name  : 'color'
+    } );
+
 } );

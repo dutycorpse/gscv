@@ -18,14 +18,42 @@
     <body>
         <div class="editor">
             <div class="editor-panel">
-            </div>
-            <div class="editor-view">
-                <div class="card">
-                    <div class="name">Maël Nison</div>
-                    <div class="job">Frontend Developer</div>
+<a href="#" class="div-bg-color" onClick="javascript:changebg('#000099')">Click Blue</a>
+              </div>
+              <div class="editor-view">
+                <div class="update">
+                  Click on the word to modify the content
+                </div>
+                <div id="bg-div" class="card">
+                  <div id="editable" contenteditable="true" class="name">
+                    Maël Nison
+                  </div>
+                  <div id="editable" contenteditable="true" class="job">
+                    Frontend Developer
+                  </div>
                 </div>
             </div>
         </div>
     </body>
-
 </html>
+<script>
+  function saveEdits() {
+    var editElem = document.getElementById("edit");
+    var userVersion = editElem.innerHTML;
+
+    localStorage.userEdits = userVersion;
+    document.getElementById("update").innerHTML="Edits saved!";
+  }
+  //
+  // function changeBGC(color) {
+  //   document.bgColor = color;
+  // }
+  function changebg(color) {
+    var div =document.getElementById("bg-div");
+    document.bgColor = color;
+  }
+  // var div = document.getElementById( 'bg-div' );
+  // div.onclick = function changebg(color) {
+  // document.bgColor = color;
+  // };
+ </script>
