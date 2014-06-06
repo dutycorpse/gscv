@@ -28,8 +28,19 @@
 
 .name, .job {
   color: black;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: #3FA5D5;
 }
 
-.div-bg-color {
-  color: blue;
+.changeBackground{
+   background-color: #FF8F00 !important;
 }
+
+/* .changeBackground { */
+/*   color: red !important; */
+/* } */

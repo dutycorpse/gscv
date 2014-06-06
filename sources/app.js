@@ -29,7 +29,8 @@ define( [
 
         onRadiusChange : function ( ) {
             this.$el.css( 'border-radius', this.model.get( 'radius' ) );
-        }
+        },
+
 
     } );
 
@@ -49,11 +50,6 @@ define( [
     appearance.createWidget( 'Border radius', 'NumberedSlider', {
         model : card,
         name  : 'radius'
-    } );
-
-    appearance.createWidget( 'Change color', 'NumberedSlider', {
-        model : card,
-        name  : 'color'
     } );
 
 } );
